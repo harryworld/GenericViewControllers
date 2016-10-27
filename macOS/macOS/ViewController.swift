@@ -16,12 +16,44 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 
+protocol GenericListProtocol {
+    associatedtype T: ListType
+    
+    func reload()
+}
+
+extension GenericListProtocol {
+    
+    func reload() {
+        print("reload: \(T.self)")
+    }
+}
+
+class BaseViewController: NSViewController {
+    
+    @IBOutlet var collectionView: NSCollectionView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+}
+
+class ReminderViewController: BaseViewController, GenericListProtocol {
+    
+    typealias T = Reminder
+    
+    var dataSource: DataSource!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        reload()
+        
+        dataSource = DataSource()
+        collectionView.dataSource = dataSource
+    }
+    
+}
