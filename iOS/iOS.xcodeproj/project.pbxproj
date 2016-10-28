@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D158B5C61DC31B5E008B6228 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158B5C51DC31B5E008B6228 /* main.swift */; };
 		D18F63A51DC216DA0069B13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F63A41DC216DA0069B13C /* AppDelegate.swift */; };
 		D18F63A71DC216DA0069B13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F63A61DC216DA0069B13C /* ViewController.swift */; };
 		D18F63AA1DC216DA0069B13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18F63A81DC216DA0069B13C /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D158B5C51DC31B5E008B6228 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D18F63A11DC216DA0069B13C /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18F63A41DC216DA0069B13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18F63A61DC216DA0069B13C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				D18F63AB1DC216DA0069B13C /* Assets.xcassets */,
 				D18F63AD1DC216DA0069B13C /* LaunchScreen.storyboard */,
 				D18F63B01DC216DA0069B13C /* Info.plist */,
+				D158B5C51DC31B5E008B6228 /* main.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D18F63C51DC248270069B13C /* Model.swift in Sources */,
+				D158B5C61DC31B5E008B6228 /* main.swift in Sources */,
 				D18F63A71DC216DA0069B13C /* ViewController.swift in Sources */,
 				D18F63C71DC2494C0069B13C /* DataSource.swift in Sources */,
 				D18F63A51DC216DA0069B13C /* AppDelegate.swift in Sources */,
@@ -305,6 +309,7 @@
 				D18F63B51DC216DA0069B13C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

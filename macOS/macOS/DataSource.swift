@@ -8,7 +8,13 @@
 
 import Cocoa
 
-class DataSource: NSObject, NSCollectionViewDataSource {
+class DataSource<T>: NSObject, NSCollectionViewDataSource {
+    
+    override init() {
+        super.init()
+        
+        print("DataSource: \(T.self)")
+    }
 
     func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3

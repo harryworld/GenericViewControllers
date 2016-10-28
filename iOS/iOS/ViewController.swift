@@ -36,27 +36,33 @@ extension GenericListProtocol {
     }
 }
 
-class BaseViewController: UICollectionViewController {
+// ==========================================================
+// NOTE: https://forums.developer.apple.com/thread/20772
+// From Apple DTS, Touch subclass to make it available to ObjC runtime
+// Use `main.swift` instead of @NSApplicationMain
+// ==========================================================
+
+class BaseViewController<G>: UICollectionViewController {
+    
+    var dataSource: DataSource<G>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataSource = DataSource()
+        collectionView?.dataSource = dataSource
     }
     
 }
 
-class ReminderViewController: BaseViewController, GenericListProtocol {
+class ReminderViewController: BaseViewController<Label>, GenericListProtocol {
     
     typealias T = Reminder
-    
-    var dataSource: DataSource!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         reload()
-        
-        dataSource = DataSource()
-        collectionView?.dataSource = dataSource
     }
     
 }

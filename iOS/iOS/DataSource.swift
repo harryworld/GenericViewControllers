@@ -8,7 +8,12 @@
 
 import UIKit
 
-class DataSource: NSObject, UICollectionViewDataSource {
+class DataSource<G>: NSObject, UICollectionViewDataSource {
+    
+    override init() {
+        super.init()
+        print("DataSource: \(G.self)")
+    }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D158B5C41DC319F1008B6228 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158B5C31DC319F1008B6228 /* main.swift */; };
 		D18F638A1DC216BB0069B13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F63891DC216BB0069B13C /* AppDelegate.swift */; };
 		D18F638C1DC216BB0069B13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18F638B1DC216BB0069B13C /* ViewController.swift */; };
 		D18F638E1DC216BB0069B13C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18F638D1DC216BB0069B13C /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D158B5C31DC319F1008B6228 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D18F63861DC216BB0069B13C /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18F63891DC216BB0069B13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18F638B1DC216BB0069B13C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				D18F63BA1DC21C220069B13C /* ViewItem.swift */,
 				D18F63BB1DC21C220069B13C /* ViewItem.xib */,
 				D18F63921DC216BB0069B13C /* Info.plist */,
+				D158B5C31DC319F1008B6228 /* main.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				D18F63B71DC217330069B13C /* Model.swift in Sources */,
 				D18F638C1DC216BB0069B13C /* ViewController.swift in Sources */,
+				D158B5C41DC319F1008B6228 /* main.swift in Sources */,
 				D18F638A1DC216BB0069B13C /* AppDelegate.swift in Sources */,
 				D18F63BF1DC21D5F0069B13C /* DataSource.swift in Sources */,
 				D18F63BC1DC21C220069B13C /* ViewItem.swift in Sources */,
@@ -302,6 +306,7 @@
 				D18F63971DC216BB0069B13C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
